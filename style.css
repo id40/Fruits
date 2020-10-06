@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #0c0c0c;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+nav {
+  background-color: #1b1a1a;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 1);
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  height: 60px;
+  z-index: 10;
+  box-sizing: border-box;
+  padding: 10px 25px;
+}
+nav span {
+  margin: 0px 15px;
+}
+
+nav span a {
+  color: #f0f0f0;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 700;
+}
+h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-top: 20px;
+}
+img {
+  height: auto;
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+#container {
+  max-width: 900px;
+  width: 60vw;
+  padding-top: 100px;
+}
+hr {
+  margin: 20px 0px;
+  width: 100%;
+  border: none;
+  border-top: 4px dashed #959595;
+}
+p {
+  margin: 40px 0px;
+}
+h2 {
+  font-size: 35px;
+  font-weight: 700;
+}
+ul {
+  margin: 20px 0px 30px 0px;
+  padding-left: 30px;
+}
+#f:hover {
+  color: #8f1cfa;
+}
+#a:hover {
+  color: crimson;
+}
+#g:hover {
+  color: #09ff46;
+}
+#o:hover {
+  color: #ff9100;
+}
+#divs {
+  display: flex;
+}
+#bar-icon,
+#mob-divs {
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+  #bar-icon,
+  #mob-divs {
+    display: flex;
+  }
+  #divs {
+    display: none;
+  }
+  #mob-divs {
+    position: absolute;
+    top: -100%;
+    left: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #131313;
+    z-index: 9;
+    padding: 30px 0px;
+    transition: 0.6s;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+  }
+  #mob-divs span {
+    margin: 10px 0px;
+    border-bottom: 1px solid #bdbdbd;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0px;
+  }
+  #mob-divs a {
+    color: white;
+    text-decoration: none;
+  }
+  #container {
+    width: 85vw;
+  }
+}
