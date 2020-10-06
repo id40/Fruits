@@ -7,15 +7,27 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="../style.css" />
     <title>Grapes</title>
   </head>
   <body>
-    <nav>
+    <nav id="navbar">
       <span>
         <a id="f" href="../">Fruits</a>
       </span>
-      <div>
+
+      <i
+        class="fa fa-bars"
+        onclick="Menu()"
+        id="bar-icon"
+        aria-hidden="true"
+      ></i>
+
+      <div id="divs">
         <span>
           <a id="a" href="../apple/">Apple</a>
         </span>
@@ -23,10 +35,21 @@
           <a id="g" href="./">Grapes</a>
         </span>
         <span>
-          <a id="o" href="../orange/">Orange</a>
+          <a id="o" href="../orange">Orange</a>
         </span>
       </div>
     </nav>
+    <div id="mob-divs">
+      <span>
+        <a id="a" href="../apple/">Apple</a>
+      </span>
+      <span>
+        <a id="g" href="./">Grapes</a>
+      </span>
+      <span>
+        <a id="o" href="../orange">Orange</a>
+      </span>
+    </div>
     <div id="container">
       <h1>GRAPES</h1>
       <img src="../images/grapes.jpg" alt="Image of Grapes Fruit" />
@@ -52,5 +75,6 @@
       </ul>
       <hr />
     </div>
+    <script src="../script.js"></script>
   </body>
 </html>

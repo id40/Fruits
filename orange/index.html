@@ -7,27 +7,49 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="../style.css" />
     <title>Orange</title>
   </head>
   <body>
-    <nav>
+    <nav id="navbar">
       <span>
         <a id="f" href="../">Fruits</a>
       </span>
-      <div>
+
+      <i
+        class="fa fa-bars"
+        onclick="Menu()"
+        id="bar-icon"
+        aria-hidden="true"
+      ></i>
+
+      <div id="divs">
         <span>
           <a id="a" href="../apple/">Apple</a>
         </span>
         <span>
-          <a id="g" href="../grapes/">Grapes</a>
+          <a id="g" href="../grapes">Grapes</a>
         </span>
         <span>
           <a id="o" href="./">Orange</a>
         </span>
       </div>
     </nav>
-
+    <div id="mob-divs">
+      <span>
+        <a id="a" href="../apple/">Apple</a>
+      </span>
+      <span>
+        <a id="g" href="../grapes">Grapes</a>
+      </span>
+      <span>
+        <a id="o" href="./">Orange</a>
+      </span>
+    </div>
     <div id="container">
       <h1>Orange</h1>
       <img src="../images/orange.webp" alt=" Image of Orange fruit" />
@@ -52,5 +74,6 @@
       </ul>
       <hr />
     </div>
+    <script src="../script.js"></script>
   </body>
 </html>
