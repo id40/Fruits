@@ -70,13 +70,13 @@ ul {
 #f:hover {
   color: #8f1cfa;
 }
-#a:hover {
+.a:hover {
   color: crimson;
 }
-#g:hover {
+.g:hover {
   color: #09ff46;
 }
-#o:hover {
+.o:hover {
   color: #ff9100;
 }
 #divs {
@@ -86,7 +86,9 @@ ul {
 #mob-divs {
   display: none;
 }
-
+#bar-icon {
+  width: 25px;
+}
 @media only screen and (max-width: 800px) {
   #bar-icon,
   #mob-divs {
